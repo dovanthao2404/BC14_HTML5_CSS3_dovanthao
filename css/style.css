@@ -8,6 +8,7 @@ body,
 html {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+  color: #636363;
 }
 ul {
   list-style: none;
@@ -81,6 +82,7 @@ header.small .get-quote__btn {
   color: #f55f8d;
 }
 .header__nav li:hover .sub__nav__level-1 {
+  animation: animation__sub__nav 0.8s;
   display: block;
 }
 
@@ -132,6 +134,7 @@ header.small .get-quote__btn {
 }
 .sub__nav__level-1 li:hover .sub__nav__level-2 {
   display: block;
+  animation: animation__sub__nav 0.8s;
 }
 .sub__nav i {
   float: right;
@@ -162,6 +165,16 @@ header.small .get-quote__btn {
     transform: translateY(-40px);
   }
   100% {
+    transform: translateY(0);
+  }
+}
+@keyframes animation__sub__nav {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -213,7 +226,6 @@ header.small .get-quote__btn {
 }
 .banner__left p {
   font-size: 1.2rem;
-  color: #636363;
   margin-bottom: 1rem;
 }
 .banner__left ul {
@@ -221,7 +233,6 @@ header.small .get-quote__btn {
 }
 .banner__left li {
   margin-bottom: 1rem;
-  color: #636363;
   font-size: 1.4rem;
 }
 .banner__left li i {
