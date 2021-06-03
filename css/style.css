@@ -208,7 +208,7 @@ header.small .get-quote__btn {
   color: white;
   font-weight: 700;
   font-size: 1rem;
-  transition: all 1s;
+  transition: all 0.5s;
   background-size: 200%;
 }
 .btn:hover {
