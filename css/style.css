@@ -360,11 +360,9 @@ header.small .get-quote__btn {
   padding-top: 115px;
   padding-bottom: 85px;
   position: relative;
-}
-.about__background {
   background-image: url(../img/bg15.png);
-  background-size: 100%;
-  background-position: top center;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .about__content {
@@ -427,8 +425,7 @@ header.small .get-quote__btn {
 /* NUMBER */
 .number {
   background-image: url(../img/bg14.png);
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding: 80px 0;
   background-position: center;
 }
 .number__content {
@@ -440,12 +437,22 @@ header.small .get-quote__btn {
   width: 25%;
 }
 .numer__item i {
-  padding: 1.2rem;
+  height: 5rem;
+  width: 5rem;
   color: white;
   font-size: 3rem;
+  padding: 1rem 0;
   border-radius: 50%;
   margin-bottom: 0.7rem;
   background-image: linear-gradient(to right, #f55f8d, #f8ae56);
+}
+.numer__item:nth-child(2) i {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+}
+.numer__item:nth-child(4) i {
+  font-size: 2.5rem;
+  padding: 1.25rem 0;
 }
 .numer__item h1 {
   color: #f55f8d;
@@ -456,4 +463,31 @@ header.small .get-quote__btn {
 .numer__item p {
   font-size: 1.2rem;
   color: #070120;
+}
+/* FEATURES */
+.features {
+  padding-top: 115px;
+  background-image: url(../img/bg2.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features .container {
+  display: flex;
+}
+.features__left,
+.features__right {
+  width: 50%;
+}
+.features__left .header__section {
+  text-align: left;
+}
+.features__item {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
+.features__logo {
+  font-size: 4rem;
 }
