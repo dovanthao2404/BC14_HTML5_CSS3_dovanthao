@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samar</title>
     <!-- lightgallery -->
+    <link rel="stylesheet" href="./dist/css/lightgallery.css" />
+    <link rel="stylesheet" href="./dist/css/lg-zoom.css" />
+    <link rel="stylesheet" href="./dist/css/lg-thumbnail.css" />
+    <link rel="stylesheet" href="./dist/css/lg-autoplay.css" />
+    <link rel="stylesheet" href="./dist/css/lg-comments.css" />
+    <link rel="stylesheet" href="./dist/css/lg-fullscreen.css" />
+    <link rel="stylesheet" href="./dist/css/lg-pager.css" />
+    <link rel="stylesheet" href="./dist/css/lg-rotate.css" />
+    <link rel="stylesheet" href="./dist/css/lg-share.css" />
+    <link rel="stylesheet" href="./dist/css/lg-video.css" />
+    <link rel="stylesheet" href="./dist/css/lg-medium-zoom.css" />
+    <!-- COUNT UP -->
+    <link rel="stylesheet" href="./lib/prism.css" />
 
     <!-- font awesome -->
     <link
@@ -291,25 +304,59 @@
         <div class="number__content">
           <div class="number__item">
             <i class="far fa-smile"></i>
-            <h1 class="counter">18</h1>
+            <!-- <h1 class="counter">18</h1> -->
+            <h1
+              class="numscroller"
+              data-min="1"
+              data-max="18"
+              data-delay="2"
+              data-increment="1"
+            >
+              18
+            </h1>
+
             <span>Ml</span>
             <p>Satisfied Clients</p>
           </div>
           <div class="number__item">
             <i class="fas fa-desktop"></i>
-            <h1 class="counter">20</h1>
+            <h1
+              class="numscroller"
+              data-min="1"
+              data-max="20"
+              data-delay="2"
+              data-increment="1"
+            >
+              20
+            </h1>
             <span>Ml</span>
             <p>Project Completed</p>
           </div>
           <div class="number__item">
             <i class="fas fa-rocket"></i>
-            <h1 class="counter">30</h1>
+            <h1
+              class="numscroller"
+              data-min="1"
+              data-max="30"
+              data-delay="2"
+              data-increment="1"
+            >
+              30
+            </h1>
             <span>Ml</span>
             <p>Project Lunched</p>
           </div>
           <div class="number__item">
             <i class="fas fa-pen"></i>
-            <h1 class="counter">50</h1>
+            <h1
+              class="numscroller"
+              data-min="1"
+              data-max="50"
+              data-delay="2"
+              data-increment="1"
+            >
+              50
+            </h1>
             <p>Years Completed</p>
           </div>
         </div>
@@ -377,6 +424,17 @@
         <div class="portfolio__content">
           <div class="portfolio__item">
             <img src="./img/pic1_2.jpg" alt="" />
+            <div class="portfolio__overlay" id="lightgallery">
+              <div class="portifolio__icon">
+                <a href="./img/pic1_2.jpg">
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+              <div class="portifolio__text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
           <div class="portfolio__item">
             <img src="./img/pic2_1.jpg" alt="" />
@@ -401,6 +459,7 @@
     <section class="blog"></section>
     <section class="trademark"></section>
     <footer></footer>
+
     <!-- CDN JQUERY -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -408,15 +467,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- Waypoints -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <!-- COUNTUP -->
-    <script src="./JS/jquery.countup.min.js"></script>
+    <script src="./lib/numscroller-1.0.js"></script>
+    <script src="./lib/prism.js"></script>
+    <!-- lightgallery -->
+    <script src="./dist/lightgallery.umd.js"></script>
+    <script src="./dist/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="./dist/plugins/zoom/lg-zoom.umd.js"></script>
+    <script src="./dist/plugins/autoplay/lg-autoplay.umd.js"></script>
+    <script src="./dist/plugins/comment/lg-comment.umd.js"></script>
+    <script src="./dist/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+    <script src="./dist/plugins/pager/lg-pager.umd.js"></script>
+    <script src="./dist/plugins/rotate/lg-rotate.umd.js"></script>
+    <script src="./dist/plugins/share/lg-share.umd.js"></script>
+    <script src="./dist/plugins/video/lg-video.umd.js"></script>
+    <script src="./dist/plugins/mediumZoom/lg-medium-zoom.umd.js"></script>
     <script>
       $(window).scroll(function () {
         var sc = $(window).scrollTop();
@@ -428,6 +493,22 @@
       });
       $(".counter").countUp({
         time: 2500,
+      });
+    </script>
+    <script type="text/javascript">
+      lightGallery(document.getElementById("lightgallery"), {
+        plugins: [
+          lgZoom,
+          lgThumbnail,
+          lgAutoplay,
+          lgComment,
+          lgFullscreen,
+          lgPager,
+          lgRotate,
+          lgShare,
+          lgVideo,
+        ],
+        speed: 500,
       });
     </script>
   </body>
