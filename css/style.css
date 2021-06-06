@@ -373,26 +373,33 @@ header.small .get-quote__btn {
   max-width: 50%;
   padding: 0 15px;
   margin-bottom: 30px;
+  position: relative;
 }
-.about__left img {
+.about__leftImg {
+  margin: 60px 70px 60px 0;
+  float: right;
   display: block;
   width: 50vw;
-  border-radius: 0 100px 100px 0;
-  float: right;
-  margin: 60px 70px 60px 0;
+  position: relative;
 }
-.about__left img::before {
+.about__leftImg::before {
   content: "";
   height: 100%;
-  background: #f55f8d;
+  background: #fef2f6;
+
   position: absolute;
   display: inline-block;
   top: 0;
+  left: 0;
   width: 50vw;
   z-index: -1;
   right: -20px;
   transform: rotate(8deg);
   border-radius: 0 100px 100px 0;
+}
+.about__left img {
+  border-radius: 0 100px 100px 0;
+  width: 100%;
 }
 .about__right {
   max-width: 50%;
@@ -402,18 +409,18 @@ header.small .get-quote__btn {
 .about__right .header__section {
   text-align: left;
 }
-.about__right__content p {
+.about__rightContent p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
-.about__right__content ul {
+.about__rightContent ul {
   margin-bottom: 2rem;
 }
-.about__right__content li {
+.about__rightContent li {
   margin-bottom: 1rem;
 }
-.about__right__content li i {
+.about__rightContent li i {
   font-size: 1rem;
   display: inline-block;
   padding: 0.3rem;
@@ -432,35 +439,38 @@ header.small .get-quote__btn {
   flex-direction: row;
   display: flex;
 }
-.numer__item {
+.number__item {
   text-align: center;
   width: 25%;
 }
-.numer__item i {
+.number__item i {
   height: 5rem;
   width: 5rem;
   color: white;
   font-size: 3rem;
   padding: 1rem 0;
   border-radius: 50%;
-  margin-bottom: 0.7rem;
+  margin: 0 auto 0.7rem;
   background-image: linear-gradient(to right, #f55f8d, #f8ae56);
+  display: block;
 }
-.numer__item:nth-child(2) i {
+.number__item:nth-child(2) i {
   font-size: 2rem;
   padding: 1.5rem 0;
 }
-.numer__item:nth-child(4) i {
+.number__item:nth-child(4) i {
   font-size: 2.5rem;
   padding: 1.25rem 0;
 }
-.numer__item h1 {
+.number__item h1,
+.number__item span {
   color: #f55f8d;
   font-size: 4rem;
   line-height: 1;
   font-weight: 800;
+  display: inline-block;
 }
-.numer__item p {
+.number__item p {
   font-size: 1.2rem;
   color: #070120;
 }
@@ -468,26 +478,107 @@ header.small .get-quote__btn {
 .features {
   padding-top: 115px;
   background-image: url(../img/bg2.png);
-  background-size: 100%;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .features .container {
   display: flex;
 }
 .features__left,
 .features__right {
-  width: 50%;
+  max-width: 50%;
+  padding: 0 1rem;
 }
 .features__left .header__section {
   text-align: left;
 }
 .features__item {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 2rem;
   background-color: #fff;
+  align-items: center;
+  position: relative;
+}
+.features__item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  opacity: 0;
+  z-index: 2;
+  transition: all 1s;
+  background-image: linear-gradient(to right, #f55f8d, #f8ae56);
+}
+.features__item:nth-of-type(1),
+.features__item:nth-of-type(3) {
+  margin-bottom: 2rem;
+  margin-right: 3.33333rem;
+  border-radius: 10px;
+  box-shadow: 0 0px 60px 0px rgb(0 0 0 / 10%);
+}
+.features__item:nth-of-type(2) {
+  margin-bottom: 2rem;
+  margin-left: 3.33333rem;
+  border-radius: 10px;
+  box-shadow: 0 0px 60px 0px rgb(0 0 0 / 10%);
 }
 .features__logo {
   font-size: 4rem;
+  z-index: 3;
+}
+.features__logo i {
+  font-size: 5.5rem;
+  color: #f55f8d;
+  transition: all 1s;
+}
+.features__text {
+  padding-left: 1.5rem;
+  z-index: 3;
+}
+.features__text h3 {
+  font-size: 1.67778rem;
+  margin-bottom: 0.6rem;
+  color: #070120;
+}
+.features__text p {
+  font-size: 1.07rem;
+  line-height: 1.5;
+  position: relative;
+}
+.features__img {
+  width: 100%;
+  margin-top: 5rem;
+}
+.features__img img {
+  width: 115%;
+  animation: animation__banner 4s infinite;
+}
+.features__item:hover {
+  color: white;
+}
+.features__item:hover::after {
+  opacity: 1;
+}
+.features__item:hover h3,
+.features__item:hover i {
+  color: white;
+}
+/* PORTFOLIO */
+.portfolio {
+  padding-top: 115px;
+}
+.portfolio__content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 2rem;
+}
+.portfolio__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
 }
