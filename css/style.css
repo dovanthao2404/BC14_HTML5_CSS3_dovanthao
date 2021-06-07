@@ -31,6 +31,18 @@ h6 {
 .clear {
   clear: both;
 }
+.lg-icon {
+  font-family: "lg" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* HEADER */
 header {
   position: fixed;
