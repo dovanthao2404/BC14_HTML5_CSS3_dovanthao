@@ -610,8 +610,8 @@ header.small .get-quote__btn {
   transition: all 1s;
 }
 .portifolio__icon i {
-  font-size: 1.7rem;
-  padding: 1rem;
+  font-size: 2rem;
+  padding: 0.7rem;
   background-image: linear-gradient(to right, #f55f8d, #f8ae56);
   opacity: 1;
   border-radius: 0.67777rem;
