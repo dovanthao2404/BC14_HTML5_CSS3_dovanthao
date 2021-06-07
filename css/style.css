@@ -444,23 +444,13 @@ header.small .get-quote__btn {
   width: 25%;
 }
 .number__item i {
-  height: 5rem;
-  width: 5rem;
+  padding: 1rem 1.2rem;
   color: white;
   font-size: 3rem;
-  padding: 1rem 0;
   border-radius: 50%;
-  margin: 0 auto 0.7rem;
+  margin: 0 8rem 1rem;
   background-image: linear-gradient(to right, #f55f8d, #f8ae56);
-  display: block;
-}
-.number__item:nth-child(2) i {
-  font-size: 2rem;
-  padding: 1.5rem 0;
-}
-.number__item:nth-child(4) i {
-  font-size: 2.5rem;
-  padding: 1.25rem 0;
+  display: inline-block;
 }
 .number__item h1,
 .number__item span {
