@@ -616,6 +616,7 @@ header.small .get-quote__btn {
   opacity: 1;
   border-radius: 0.67777rem;
   color: white;
+  cursor: pointer;
 }
 .portifolio__text {
   position: absolute;

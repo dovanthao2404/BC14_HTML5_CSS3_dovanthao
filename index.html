@@ -6,17 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samar</title>
     <!-- lightgallery -->
-    <link rel="stylesheet" href="./dist/css/lightgallery.css" />
-    <link rel="stylesheet" href="./dist/css/lg-zoom.css" />
-    <link rel="stylesheet" href="./dist/css/lg-thumbnail.css" />
-    <link rel="stylesheet" href="./dist/css/lg-autoplay.css" />
-    <link rel="stylesheet" href="./dist/css/lg-comments.css" />
-    <link rel="stylesheet" href="./dist/css/lg-fullscreen.css" />
-    <link rel="stylesheet" href="./dist/css/lg-pager.css" />
-    <link rel="stylesheet" href="./dist/css/lg-rotate.css" />
-    <link rel="stylesheet" href="./dist/css/lg-share.css" />
-    <link rel="stylesheet" href="./dist/css/lg-video.css" />
-    <link rel="stylesheet" href="./dist/css/lg-medium-zoom.css" />
+    <link rel="stylesheet" href="./lightgallery/lightgallery.min.css" />
     <!-- COUNT UP -->
     <link rel="stylesheet" href="./lib/prism.css" />
     <!-- font themify -->
@@ -432,14 +422,19 @@
           <h6>Portfolio</h6>
           <h1>Our Latest Work</h1>
         </div>
-        <div id="lightgallery" class="portfolio__content">
+        <div class="portfolio__content lightgallery">
           <div class="portfolio__item">
             <img src="./img/pic1_2.jpg" alt="" />
             <div class="portfolio__overlay">
               <div class="portifolio__icon">
-                <a href="./img/pic1_2.jpg">
+                <span
+                  data-exthumbimage="./img/pic1_2.jpg"
+                  data-src="./img/pic1_2.jpg"
+                  class="lightimg"
+                  title="Design"
+                >
                   <i class="la la-plus"></i>
-                </a>
+                </span>
               </div>
               <div class="portifolio__text">
                 <h3>Software Landing</h3>
@@ -449,18 +444,98 @@
           </div>
           <div class="portfolio__item">
             <img src="./img/pic2_1.jpg" alt="" />
+            <div class="portfolio__overlay">
+              <div class="portifolio__icon">
+                <span
+                  data-exthumbimage="./img/pic2_1.jpg"
+                  data-src="./img/pic2_1.jpg"
+                  class="lightimg"
+                  title="Design"
+                >
+                  <i class="la la-plus"></i>
+                </span>
+              </div>
+              <div class="portifolio__text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
           <div class="portfolio__item">
             <img src="./img/pic3_1.jpg" alt="" />
+            <div class="portfolio__overlay">
+              <div class="portifolio__icon">
+                <span
+                  data-exthumbimage="./img/pic3_1.jpg"
+                  data-src="./img/pic3_1.jpg"
+                  class="lightimg"
+                  title="Design"
+                >
+                  <i class="la la-plus"></i>
+                </span>
+              </div>
+              <div class="portifolio__text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
           <div class="portfolio__item">
             <img src="./img/pic4.jpg" alt="" />
+            <div class="portfolio__overlay">
+              <div class="portifolio__icon">
+                <span
+                  data-exthumbimage="./img/pic4.jpg"
+                  data-src="./img/pic4.jpg"
+                  class="lightimg"
+                  title="Design"
+                >
+                  <i class="la la-plus"></i>
+                </span>
+              </div>
+              <div class="portifolio__text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
           <div class="portfolio__item">
             <img src="./img/pic5.jpg" alt="" />
+            <div class="portfolio__overlay">
+              <div class="portifolio__icon">
+                <span
+                  data-exthumbimage="./img/pic5.jpg"
+                  data-src="./img/pic5.jpg"
+                  class="lightimg"
+                  title="Design"
+                >
+                  <i class="la la-plus"></i>
+                </span>
+              </div>
+              <div class="portifolio__text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
           <div class="portfolio__item">
             <img src="./img/pic6.jpg" alt="" />
+            <div class="portfolio__overlay">
+              <div class="portifolio__icon">
+                <span
+                  data-exthumbimage="./img/pic6.jpg"
+                  data-src="./img/pic6.jpg"
+                  class="lightimg"
+                  title="Design"
+                >
+                  <i class="la la-plus"></i>
+                </span>
+              </div>
+              <div class="portifolio__text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -482,17 +557,7 @@
     <script src="./lib/numscroller-1.0.js"></script>
     <script src="./lib/prism.js"></script>
     <!-- lightgallery -->
-    <script src="./dist/lightgallery.umd.js"></script>
-    <script src="./dist/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-    <script src="./dist/plugins/zoom/lg-zoom.umd.js"></script>
-    <script src="./dist/plugins/autoplay/lg-autoplay.umd.js"></script>
-    <script src="./dist/plugins/comment/lg-comment.umd.js"></script>
-    <script src="./dist/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-    <script src="./dist/plugins/pager/lg-pager.umd.js"></script>
-    <script src="./dist/plugins/rotate/lg-rotate.umd.js"></script>
-    <script src="./dist/plugins/share/lg-share.umd.js"></script>
-    <script src="./dist/plugins/video/lg-video.umd.js"></script>
-    <script src="./dist/plugins/mediumZoom/lg-medium-zoom.umd.js"></script>
+    <script src="./lightgallery/lightgallery-all.min.js"></script>
     <script>
       $(window).scroll(function () {
         var sc = $(window).scrollTop();
@@ -506,20 +571,12 @@
         time: 2500,
       });
     </script>
-    <script type="text/javascript">
-      lightGallery(document.getElementById("lightgallery"), {
-        plugins: [
-          lgZoom,
-          lgThumbnail,
-          lgAutoplay,
-          lgComment,
-          lgFullscreen,
-          lgPager,
-          lgRotate,
-          lgShare,
-          lgVideo,
-        ],
-        speed: 500,
+    <script>
+      $("#lightgallery, .lightgallery").lightGallery({
+        selector: ".lightimg",
+        loop: true,
+        thumbnail: true,
+        exThumbImage: "data-exthumbimage",
       });
     </script>
   </body>
