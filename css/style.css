@@ -662,13 +662,125 @@ header.small .get-quote__btn {
 .portfolio__item:hover .portfolio__overlay {
   opacity: 1;
   visibility: visible;
-  animation: animation__portfolio 0.75s;
+  animation: animation__portfolio 0.6s;
 }
 @keyframes animation__portfolio {
   0% {
-    transform: skewX(-25deg) translateX(-110%);
+    transform: skewX(-25deg) translateX(-135%);
   }
   100% {
     transform: skewX(-25deg) translateX(-20%);
   }
+}
+/* PLAN */
+.plan {
+  padding-top: 115px;
+  background-image: url(../img/bg16.png);
+  background-size: cover;
+  background-position: center;
+}
+.plan .header__section h1 {
+  margin-bottom: 1rem;
+}
+.header__section .header__tab {
+  background-image: linear-gradient(to right, #f55f8d, #f8ae56);
+  border-radius: 0.3rem;
+  display: flex;
+  margin: 0 auto;
+  height: 50px;
+  width: 235px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.header__section .header__tab span {
+  width: 50%;
+  text-align: center;
+  color: #000;
+  transition: all 1s;
+  height: 42px;
+  line-height: 42px;
+  cursor: pointer;
+  position: relative;
+  z-index: 4;
+}
+.header__section .header__tab::after {
+  content: "";
+  width: calc(50% - 4px);
+  display: block;
+  height: 42px;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 2;
+  left: 4px;
+  right: auto;
+  transition: all 1s;
+}
+.plan__content {
+  display: flex;
+  justify-content: space-between;
+}
+.plan__item {
+  width: calc(100% / 3);
+  padding: 2.33333rem 4rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 0 50px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  border: 3px solid transparent;
+  transition: all 0.5s;
+  border-image: 100 round;
+}
+.plan__item + .plan__item {
+  margin-left: 2rem;
+}
+.plan__item h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #262626;
+}
+.plan__item img {
+  width: 125px;
+  margin: auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+.plan__item h2 {
+  margin-bottom: 25px;
+  color: #f8ae56;
+  font-size: 50px;
+  text-align: center;
+}
+.plan__item h2 span {
+  font-size: 1.2rem;
+  color: #262626;
+}
+.plan__item ul {
+  padding: 15px 0;
+  border-top: 1px solid #e1e1f0;
+}
+.plan__item li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.plan__item li i {
+  font-size: 0.7rem;
+  padding: 0.4rem;
+  background-color: #feeff3;
+  border-radius: 50%;
+  color: rgb(245, 95, 141);
+}
+.plan__item li p {
+  font-size: 1.2rem;
+  color: #070120;
+  margin-left: 1rem;
+}
+.plan__item input {
+  display: block;
+  margin: auto;
+}
+.plan__item:hover {
+  border-image: url(../img/br.png) 1 round;
 }
