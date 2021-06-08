@@ -614,7 +614,7 @@ header.small .get-quote__btn {
   background: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.4) 90%,
-    rgba(255, 255, 255, 0.1) 10%
+    rgba(0, 0, 0, 0.1) 10%
   );
   opacity: 0;
 }
@@ -695,18 +695,33 @@ header.small .get-quote__btn {
   margin-bottom: 40px;
   position: relative;
 }
-.header__section .header__tab span {
+.header__tab span {
+  font-size: 14px;
+  font-weight: 500;
   width: 50%;
   text-align: center;
-  color: #000;
+  text-transform: uppercase;
   transition: all 1s;
   height: 42px;
   line-height: 42px;
   cursor: pointer;
   position: relative;
-  z-index: 4;
+  z-index: 3;
+  color: white;
 }
-.header__section .header__tab::after {
+.header__tab span.monthly {
+  color: #000;
+}
+.header__tab.yearly .monthly {
+  color: #fff;
+}
+.header__section .header__tab.monthly span.monthly,
+.header__section .header__tab.yearly span.yearly {
+  color: #000;
+}
+.header__section .header__tab::after,
+.header__section .header__tab.monthly::after,
+.header__section .header__tab.yearly::after {
   content: "";
   width: calc(50% - 4px);
   display: block;
@@ -714,10 +729,13 @@ header.small .get-quote__btn {
   background: #fff;
   border-radius: 4px;
   position: absolute;
-  z-index: 2;
   left: 4px;
   right: auto;
+  z-index: 2;
   transition: all 1s;
+}
+.header__section .header__tab.yearly::after {
+  transform: translateX(100%);
 }
 .plan__content {
   display: flex;

@@ -668,7 +668,7 @@
           <h1>What Our Clients Say’s</h1>
         </div>
         <div class="testimonial__content">
-          <div class="your-class">
+          <div class="testimonial__carousel">
             <div>your content</div>
             <div>your content</div>
             <div>your content</div>
@@ -726,20 +726,18 @@
       });
     </script>
     <script>
-      $(".slider-for").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: ".slider-nav",
+      $(document).ready(function () {
+        $(".testimonial__carousel").slick({});
       });
-      $(".slider-nav").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: ".slider-for",
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true,
+    </script>
+    <script>
+      jQuery(".monthly").on("click", function () {
+        jQuery(".header__tab").removeClass("yearly");
+        jQuery(".header__tab").addClass("monthly");
+      });
+      jQuery(".yearly").on("click", function () {
+        jQuery(".header__tab").addClass("yearly");
+        jQuery(".header__tab").removeClass("monthly");
       });
     </script>
   </body>
