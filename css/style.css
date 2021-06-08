@@ -584,14 +584,13 @@ header.small .get-quote__btn {
   margin: 1rem;
   position: relative;
   overflow: hidden;
+  border-radius: 0.8rem;
 }
 .portfolio__item img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
-  border-radius: 0.8rem;
   display: block;
-
   transform: rotate(0) scale(1);
   transition: all 0.5s;
 }
@@ -609,9 +608,15 @@ header.small .get-quote__btn {
   left: 0;
   top: 0;
   height: 100%;
-  width: 100%;
-  border-radius: 0.8rem;
-  background-color: rgb(0, 0, 0, 0.5);
+  width: 200%;
+  visibility: hidden;
+  display: block;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4) 90%,
+    rgba(255, 255, 255, 0.1) 10%
+  );
+  opacity: 0;
 }
 .portifolio__icon {
   position: absolute;
@@ -653,4 +658,17 @@ header.small .get-quote__btn {
 .portfolio__item:hover .portifolio__text {
   transform: translate(0);
   opacity: 1;
+}
+.portfolio__item:hover .portfolio__overlay {
+  opacity: 1;
+  visibility: visible;
+  animation: animation__portfolio 0.75s;
+}
+@keyframes animation__portfolio {
+  0% {
+    transform: skewX(-25deg) translateX(-110%);
+  }
+  100% {
+    transform: skewX(-25deg) translateX(-20%);
+  }
 }
