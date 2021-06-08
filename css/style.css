@@ -678,6 +678,7 @@ header.small .get-quote__btn {
   background-image: url(../img/bg16.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .plan .header__section h1 {
   margin-bottom: 1rem;
@@ -783,4 +784,11 @@ header.small .get-quote__btn {
 }
 .plan__item:hover {
   border-image: url(../img/br.png) 1 round;
+}
+/* TESTIMONIAL */
+.testimonial {
+  padding-top: 115px;
+  background-image: url(../img/bg17.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
