@@ -504,6 +504,7 @@ header.small .get-quote__btn {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .features .container {
   display: flex;
