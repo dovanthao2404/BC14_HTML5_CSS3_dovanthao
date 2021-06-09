@@ -995,6 +995,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- HEADER -->
     <script>
       $(window).scroll(function () {
         var sc = $(window).scrollTop();
@@ -1005,11 +1006,13 @@
         }
       });
     </script>
+    <!-- COUNT UP -->
     <script>
       $(".counter").counterUp({
         time: 2500,
       });
     </script>
+    <!-- LIGHT GALLERY -->
     <script>
       $("#lightgallery, .lightgallery").lightGallery({
         selector: ".lightimg",
@@ -1018,6 +1021,7 @@
         exThumbImage: "data-exthumbimage",
       });
     </script>
+    <!-- BUTTON MONTH YEAR -->
     <script>
       jQuery(".monthly").on("click", function () {
         jQuery(".header__tab").removeClass("yearly");
@@ -1028,6 +1032,7 @@
         jQuery(".header__tab").removeClass("monthly");
       });
     </script>
+    <!-- ACTIVE HOVER -->
     <script>
       jQuery(".plan-hover, .box-hover").on("mouseenter", function () {
         var selector = jQuery(this).parent().parent();
@@ -1035,6 +1040,7 @@
         jQuery(this).addClass("active");
       });
     </script>
+    <!-- SWIPER -->
     <script>
       var testimonialThumbs = new Swiper(".testimonial-thumbs", {
         slidesPerView: 3,
@@ -1059,6 +1065,7 @@
         },
       });
     </script>
+    <!-- OWL -->
     <script>
       $(".blog__content").owlCarousel({
         loop: true,

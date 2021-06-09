@@ -4,6 +4,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+::selection {
+  background: #f55f8d;
+  color: #fff;
+}
 body,
 html {
   font-family: "Roboto", sans-serif;
@@ -268,7 +272,7 @@ header.small .get-quote__btn {
 .banner__left h1 {
   font-size: 4.6777rem;
   color: #262626;
-  line-height: 1;
+  line-height: 1.1;
   margin-bottom: 20px;
   font-weight: 800;
 }
@@ -1117,7 +1121,6 @@ footer {
   align-items: center;
   padding: 50px 60px;
   background-color: #fff;
-  /* z-index: 99; */
   position: relative;
   border-radius: 10px;
   box-shadow: 0 0px 30px 0 rgb(0 0 0 / 10%);
