@@ -85,6 +85,8 @@ header.small .logo__header {
   align-items: center;
   transition: all 1s;
   height: 90px;
+  display: flex;
+  align-items: center;
 }
 header.small .header__nav > ul > li {
   transition: all 1s;
