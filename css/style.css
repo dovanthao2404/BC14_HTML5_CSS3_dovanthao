@@ -504,7 +504,6 @@ header.small .get-quote__btn {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 .features .container {
   display: flex;
@@ -591,11 +590,11 @@ header.small .get-quote__btn {
 }
 
 .features__img {
-  width: 100%;
   margin-top: 5rem;
+  margin-right: -4.66667rem;
 }
 .features__img img {
-  width: 115%;
+  width: 100%;
   animation: animation__banner 4s infinite;
 }
 .features__item.active:hover h3,
@@ -842,12 +841,10 @@ header.small .get-quote__btn {
   background-image: url(../img/bg17.png);
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 .testimonial__content .testimonial-thumbs {
   position: relative;
   width: 300px;
-  overflow: hidden;
 }
 .testimonial-thumbs .swiper-slide {
   width: 80px !important;
@@ -1000,11 +997,9 @@ header.small .get-quote__btn {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 .blog__content {
   cursor: grab;
-  overflow: hidden;
 }
 .blog__item {
   background-color: rgba(245, 95, 141, 0.1);
@@ -1070,10 +1065,8 @@ header.small .get-quote__btn {
 .trademark {
   padding-top: 110px;
   padding-bottom: 80px;
-  overflow: hidden;
 }
 .trademark__carousel {
-  overflow: hidden;
 }
 .trademark__item {
   position: relative;
