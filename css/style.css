@@ -85,8 +85,6 @@ header.small .logo__header {
   align-items: center;
   transition: all 1s;
   height: 90px;
-  display: flex;
-  align-items: center;
 }
 header.small .header__nav > ul > li {
   transition: all 1s;
@@ -107,6 +105,8 @@ header.small .get-quote__btn {
 .logo__header {
   transition: all 1s;
   height: 130px;
+  display: flex;
+  align-items: center;
 }
 .header__nav > ul {
   display: flex;
@@ -408,22 +408,18 @@ header.small .get-quote__btn {
   margin-bottom: 30px;
   position: relative;
 }
+
 .about__leftImg {
   margin: 60px 70px 60px 0;
   float: right;
   display: block;
   width: 50vw;
   position: relative;
-  display: flex;
-  justify-items: flex-start;
-  align-items: center;
-  flex-direction: column;
 }
 .about__leftImg::before {
   content: "";
   height: 100%;
   background: #fef2f6;
-
   position: absolute;
   display: inline-block;
   top: 0;
