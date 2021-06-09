@@ -112,7 +112,7 @@ header.small .get-quote__btn {
   display: flex;
 }
 .header__nav a {
-  color: #070120;
+  color: #262f5a;
 }
 .header__nav > ul > li {
   padding: 55px 15px;
@@ -120,7 +120,8 @@ header.small .get-quote__btn {
   font-weight: 700;
   cursor: pointer;
   transition: all 1s;
-  color: #070120;
+  color: #262f5a;
+
   position: relative;
 }
 .header__nav > ul > li > a {
@@ -153,6 +154,17 @@ header.small .get-quote__btn {
 .sub__nav li {
   padding: 1rem 1rem 1rem 2rem;
   background-color: white;
+  transition: all 0.5s;
+}
+.sub__nav li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub__nav i {
+  margin-right: 0.67777rem;
+  font-size: 0.6rem;
+  font-weight: 600;
   transition: all 0.5s;
 }
 .sub__nav li:hover {
@@ -190,12 +202,6 @@ header.small .get-quote__btn {
 .sub__nav__level-1 li:hover .sub__nav__level-2 {
   display: block;
   animation: animation__sub__nav 0.8s;
-}
-.sub__nav i {
-  margin-right: 0.67777rem;
-  font-size: 0.6rem;
-  font-weight: 600;
-  transition: all 0.5s;
 }
 .sub__nav__level-1 {
   position: absolute;
