@@ -32,9 +32,6 @@ h6 {
   max-width: 1200px;
   margin: 0 auto;
 }
-.clear {
-  clear: both;
-}
 @font-face {
   font-family: "lg";
   src: url("../lightgallery/fonts/lg.eot?n1z373");
@@ -84,8 +81,8 @@ header.small {
   box-shadow: 0 0 50px 0 rgb(0 0 0 / 10%);
 }
 header.small .logo__header {
-  display: table;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   transition: all 1s;
   height: 90px;
 }
@@ -97,25 +94,20 @@ header.small .get-quote__btn {
   height: 90px;
   transition: all 1s;
 }
-
+.header__content {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+.header__right {
+  display: flex;
+}
 .logo__header {
-  float: left;
-  display: table;
-  vertical-align: middle;
   transition: all 1s;
   height: 130px;
 }
-.logo__header a {
-  display: table-cell;
-  vertical-align: middle;
-}
-.header__nav,
-.get-quote__btn {
-  float: right;
-}
 .header__nav > ul {
   display: flex;
-  align-items: center;
 }
 .header__nav a {
   color: #070120;
@@ -198,7 +190,6 @@ header.small .get-quote__btn {
   animation: animation__sub__nav 0.8s;
 }
 .sub__nav i {
-  float: right;
   margin-right: 0.67777rem;
   font-size: 0.6rem;
   font-weight: 600;
@@ -421,6 +412,10 @@ header.small .get-quote__btn {
   display: block;
   width: 50vw;
   position: relative;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 .about__leftImg::before {
   content: "";
@@ -848,6 +843,7 @@ header.small .get-quote__btn {
   background-image: url(../img/bg17.png);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .testimonial__content .testimonial-thumbs {
   position: relative;
@@ -1001,14 +997,15 @@ header.small .get-quote__btn {
 /* BLOG */
 .blog {
   padding-top: 115px;
-
   background-image: url(../img/bg16.png);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .blog__content {
   cursor: grab;
+  overflow: hidden;
 }
 .blog__item {
   background-color: rgba(245, 95, 141, 0.1);
@@ -1074,6 +1071,10 @@ header.small .get-quote__btn {
 .trademark {
   padding-top: 110px;
   padding-bottom: 80px;
+  overflow: hidden;
+}
+.trademark__carousel {
+  overflow: hidden;
 }
 .trademark__item {
   position: relative;
