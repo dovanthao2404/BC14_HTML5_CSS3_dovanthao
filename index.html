@@ -674,7 +674,7 @@
           <h1>What Our Clients Say’s</h1>
         </div>
         <div class="testimonial__content">
-          <div class="swiper-container testimonial-thumbs">
+          <div class="swiper-container testimonial__thumbs">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial-pic">
@@ -696,7 +696,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-container testimonial-infor">
+          <div class="swiper-container testimonial__infor">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial-text">
@@ -1046,7 +1046,7 @@
     </script>
     <!-- SWIPER -->
     <script>
-      var testimonialThumbs = new Swiper(".testimonial-thumbs", {
+      var testimonialThumbs = new Swiper(".testimonial__thumbs", {
         slidesPerView: 3,
         centeredSlides: true,
         freeMode: true,
@@ -1054,7 +1054,7 @@
         loop: true,
         speed: 3000,
       });
-      var testimonialContent = new Swiper(".testimonial-infor", {
+      var testimonialContent = new Swiper(".testimonial__infor", {
         spaceBetween: 10,
         autoplay: true,
         slidesPerView: 1,
