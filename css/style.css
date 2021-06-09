@@ -413,6 +413,7 @@ header.small .get-quote__btn {
   padding: 0 15px;
   margin-bottom: 30px;
   position: relative;
+  margin-top: auto;
 }
 
 .about__leftImg {
