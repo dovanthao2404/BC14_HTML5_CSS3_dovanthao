@@ -180,11 +180,6 @@ header.small .get-quote__btn {
   left: -1rem;
 }
 .sub__nav__level-1 > li a {
-  font-weight: 500;
-  font-size: 1rem;
-  position: relative;
-}
-.sub__nav__level-1 li {
   position: relative;
 }
 .sub__nav__level-1 > li:hover > a::before {
@@ -273,7 +268,7 @@ header.small .get-quote__btn {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
-  padding-top: 180px;
+  padding-top: 12rem;
   overflow: hidden;
 }
 .banner__content {
@@ -366,9 +361,8 @@ header.small .get-quote__btn {
 }
 .services__item {
   text-align: center;
-  padding: 0 15px;
   background-color: #fff;
-  padding: 30px;
+  padding: 2rem;
   box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
   border-radius: 8px;
   transition: all 0.8s;
@@ -407,7 +401,7 @@ header.small .get-quote__btn {
 }
 .about__left {
   max-width: 50%;
-  padding: 0 15px;
+  padding: 0 1rem;
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
@@ -473,7 +467,6 @@ header.small .get-quote__btn {
   background-position: center;
 }
 .number__content {
-  flex-direction: row;
   display: flex;
 }
 .number__item {
@@ -485,7 +478,7 @@ header.small .get-quote__btn {
   color: white;
   font-size: 3rem;
   border-radius: 50%;
-  margin: 0 8rem 1rem;
+  margin: 0 7rem 1rem;
   background-image: linear-gradient(to right, #f55f8d, #f8ae56);
   display: inline-block;
 }
@@ -516,7 +509,9 @@ header.small .get-quote__btn {
 .features__left,
 .features__right {
   max-width: 50%;
-  padding: 0 1rem;
+}
+.features__right {
+  margin-left: 2rem;
 }
 .features__left .header__section {
   text-align: left;
@@ -820,7 +815,7 @@ header.small .get-quote__btn {
   color: #262626;
 }
 .plan__item ul {
-  padding: 15px 0;
+  padding: 1rem 0;
   border-top: 1px solid #e1e1f0;
 }
 .plan__item li {
@@ -969,9 +964,6 @@ header.small .get-quote__btn {
   border-radius: 10px;
   background-color: #fff;
   max-width: 770px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5rem;
   font-style: italic;
   margin: 20px auto;
   position: relative;
@@ -1127,8 +1119,6 @@ header.small .get-quote__btn {
 footer {
   background-image: url(../img/bg4.png);
   display: block;
-}
-.site__footer {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -1191,7 +1181,6 @@ footer {
 .footer__subscribe button:hover i {
   animation: animation__btnFooter 0.5s;
 }
-
 @keyframes animation__btnFooter {
   0% {
     transform: translateX(0);
@@ -1218,7 +1207,7 @@ footer {
   width: 25%;
 }
 .footer__item + .footer__item {
-  padding-left: 30px;
+  padding-left: 2rem;
 }
 .footer__logo {
   margin-bottom: 1.67777rem;
@@ -1255,7 +1244,8 @@ footer {
   font-size: 1.7rem;
   margin-bottom: 2rem;
 }
-.footer__item h2::before {
+.footer__item h2::before,
+.footer__item h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1264,20 +1254,12 @@ footer {
   width: 1rem;
   border-radius: 20px;
   background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
-  background-size: 200%;
 }
 .footer__item h2::after {
-  content: "";
-  position: absolute;
   bottom: 0;
   left: 0;
-  height: 4px;
   width: 40px;
   left: 20px;
-  border-radius: 20px;
-  background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
-
-  background-size: 200%;
 }
 .footer__item > ul > li {
   margin-bottom: 1.5rem;
