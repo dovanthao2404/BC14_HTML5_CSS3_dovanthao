@@ -57,7 +57,6 @@ h6 {
   background-size: 60px;
   z-index: 1001;
 }
-
 #loader {
   position: fixed;
   top: 0;
@@ -121,7 +120,6 @@ header.small .get-quote__btn {
   cursor: pointer;
   transition: all 1s;
   color: #262f5a;
-
   position: relative;
 }
 .header__nav > ul > li > a {
@@ -142,7 +140,6 @@ header.small .get-quote__btn {
   animation: animation__sub__nav 0.8s;
   display: block;
 }
-
 .sub__nav {
   box-shadow: 0px 1px 40px 0px rgb(0 0 0 / 10%);
   min-width: 220px;
@@ -612,6 +609,10 @@ header.small .get-quote__btn {
 /* PORTFOLIO */
 .portfolio {
   padding-top: 115px;
+  background-image: url(../img/bg17.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .portfolio__content {
   display: grid;
@@ -1015,7 +1016,7 @@ header.small .get-quote__btn {
   cursor: grab;
 }
 .blog__item {
-  background-color: rgba(245, 95, 141, 0.1);
+  background-color: rgb(245 95 141 / 10%);
   border-radius: 8px;
   position: relative;
 }
@@ -1078,8 +1079,6 @@ header.small .get-quote__btn {
 .trademark {
   padding-top: 110px;
   padding-bottom: 80px;
-}
-.trademark__carousel {
 }
 .trademark__item {
   position: relative;
@@ -1147,9 +1146,8 @@ footer {
 .footer__subscribe {
   display: flex;
   justify-content: space-between;
-  padding: calc(4rem - 10px) 4rem;
+  padding: 3.33333rem 4rem;
   align-items: center;
-  padding: 50px 60px;
   background-color: #fff;
   position: relative;
   border-radius: 10px;
@@ -1171,7 +1169,6 @@ footer {
   outline: none;
   padding: 1.2rem 1.2rem;
   width: 100%;
-  border: 0;
   border: 1px solid #fff;
   border-radius: 0.5rem 0 0 0.5rem;
   box-shadow: 0 0 50px 0 rgb(0 0 0 / 10%);
