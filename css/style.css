@@ -179,7 +179,8 @@ header.small .get-quote__btn {
   top: 0.5rem;
   left: -1rem;
 }
-.sub__nav__level-1 > li a {
+.sub__nav__level-1 > li a,
+.sub__nav__level-1 > li {
   position: relative;
 }
 .sub__nav__level-1 > li:hover > a::before {
