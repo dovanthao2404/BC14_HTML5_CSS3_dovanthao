@@ -216,7 +216,6 @@ h6 {
   background-image: linear-gradient(to left, #f55f8d, #f8ae56, #f55f8d);
   color: white;
   font-weight: 700;
-
   transition: all 0.5s;
   background-size: 200%;
 }
@@ -703,7 +702,6 @@ h6 {
   font-weight: 500;
   width: 50%;
   text-align: center;
-  text-transform: uppercase;
   transition: all 1s;
   height: 42px;
   line-height: 42px;
@@ -711,12 +709,10 @@ h6 {
   z-index: 3;
   color: white;
 }
-.header__tab span.monthly {
-  color: #000;
-}
 .header__tab.yearly .monthly {
   color: #fff;
 }
+.header__tab span.monthly,
 .header__section .header__tab.monthly span.monthly,
 .header__section .header__tab.yearly span.yearly {
   color: #000;
@@ -766,8 +762,7 @@ h6 {
 }
 .plan__item img {
   width: 125px;
-  margin: auto;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   display: block;
 }
 .plan__item h2 {
@@ -794,7 +789,7 @@ h6 {
   padding: 0.4rem;
   background-color: #feeff3;
   border-radius: 50%;
-  color: rgb(245, 95, 141);
+  color: #f55f8d;
 }
 .plan__item li p {
   font-size: 1.2rem;
@@ -982,7 +977,7 @@ h6 {
   cursor: pointer;
 }
 .blog__text {
-  padding: 1.5rem 1rem 1.33333rem 1rem;
+  padding: 1.5rem 1rem 1.33333rem;
 }
 .blog__text span {
   position: absolute;
@@ -994,7 +989,6 @@ h6 {
   text-transform: uppercase;
   border-radius: 6px;
 }
-
 .blog__text h2 {
   margin: 10px 0;
   color: #070120;
@@ -1180,7 +1174,6 @@ footer {
 }
 .footer__logoContent i {
   height: 40px;
-  width: 40px;
   min-width: 40px;
   line-height: 40px;
   text-align: center;
@@ -1213,8 +1206,6 @@ footer {
   background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
 }
 .footer__item h2::after {
-  bottom: 0;
-  left: 0;
   width: 40px;
   left: 20px;
 }
@@ -1226,14 +1217,13 @@ footer {
 .footer__item > ul > li a:hover i {
   color: #fff;
 }
+.footer__item a,
 .footer__item > ul > li i {
   color: #ffffff99;
   transition: all 0.5s;
-  margin-right: 0.5rem;
 }
-.footer__item a {
-  transition: all 0.5s;
-  color: #ffffff99;
+.footer__item > ul > li i {
+  margin-right: 0.5rem;
 }
 .footer__coypyright {
   padding: 0.67777rem;
