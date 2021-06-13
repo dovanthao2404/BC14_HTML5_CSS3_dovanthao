@@ -69,10 +69,10 @@
   <body>
     <div id="status"></div>
     <div id="loader"></div>
-    <header id="header-sroll">
+    <header id="header">
       <div class="container">
         <div class="header__content">
-          <div class="logo__header">
+          <div class="header__left">
             <a href="#"> <img src="./img/logo-2.png" alt="logo-samar" /></a>
           </div>
           <div class="header__right">
@@ -681,19 +681,19 @@
           <div class="swiper-container testimonial__thumbs">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="testimonial-pic">
+                <div class="testimonial__pic">
                   <img src="./img/pic1_4.jpg" alt="" />
                   <div class="pic__arrows"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="testimonial-pic">
+                <div class="testimonial__pic">
                   <img src="./img/pic2_3.jpg" alt="" />
                   <div class="pic__arrows"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="testimonial-pic">
+                <div class="testimonial__pic">
                   <img src="./img/pic3_3.jpg" alt="" />
                   <div class="pic__arrows"></div>
                 </div>
@@ -1010,10 +1010,10 @@
     <script>
       $(window).scroll(function () {
         var sc = $(window).scrollTop();
-        if (sc > 130) {
-          $("#header-sroll").addClass("small");
+        if (sc > 1) {
+          $("#header").addClass("small");
         } else {
-          $("#header-sroll").removeClass("small");
+          $("#header").removeClass("small");
         }
       });
     </script>
