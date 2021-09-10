@@ -811,10 +811,6 @@ h6 {
   position: relative;
   width: 300px;
 }
-.testimonial__content .swiper-container {
-  margin: auto;
-  overflow: hidden;
-}
 .testimonial__thumbs .swiper-slide {
   width: 80px !important;
   margin: 0 10px;
